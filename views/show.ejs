@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Movies</title>
+  <link rel="stylesheet" href="style2.css"></link>
+</head>
+<body>
+  <h1>Top 'notch' Movies</h1>
+  <div id="container">
+    <h1 id="title-head"><%= summary.title %></h1>
+    <div id="info-box">
+          <img src="<%= summary.originalimage.source %>" alt="<%= infobox.alt %>" />
+          <div>
+              Director: <%= infobox.director %><br />
+              Producer: <%= infobox.producer %><br />
+              Starring: <%= infobox.starring %><br />
+            <% if(infobox.released.date == undefined) { %>
+              <% let d = new Date(infobox.released[0].date) %>
+              Release: <%= d.getFullYear() %><br />
+            <% } else { %>
+              <% let d = new Date(infobox.released.date) %>
+              Release: <%= d.getFullYear() %><br />
+            <% } %>
+            Country: <%= infobox.country %><br />
+            Language: <%= 'Telugu' %><br />
+            Runtime: <%= Math.floor(parseInt(infobox.runtime) / 60) + '+hrs' %>
+          </div>
+    </div>
+    <iframe src="<%= actual[0] %>" allowfullscreen></iframe>
+    <div id="btns">
+      <div onclick="window.location.href = '<%= actual[1] %>'">Trailer</div>
+      <div onclick="window.location.href = '<%= actual[2] %>'">Download</div>
+    </div>
+
+    <div id="smps"><b style="font-size:2rem;">About Movie</b> <br><br> <%= summary.extract %></div>
+
+  </div>
+  <div id="extra">lol</div>
+  <div id="foot">2024 - <%= new Date().getFullYear() %></div>
+</body>
+</html>

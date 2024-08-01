@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Movies</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <h1>Top 'notch' Movies</h1>
+  <div id="container">
+    <% list.forEach(items => { %>
+    <div onclick="window.location.href = '<%= items[0] %>'">
+      <img src="<%= items[1].originalimage.source %>" />
+      <h3><%= items[1].title %></h3>
+      <% if(items[2].released.date == undefined) { %>
+        <% let d = new Date(items[2].released[0].date) %>
+        <p><%= d.getFullYear() %></p>
+      <% } else { %>
+        <% let d = new Date(items[2].released.date) %>
+        <p><%= d.getFullYear() %></p>
+      <% } %>
+    </div>
+    <% }) %>
+  </div>
+  <div id="extra">lol</div>
+  <div id="foot">2024 - <%= new Date().getFullYear() %></div>
+  <script src="script.js"></script>
+</body>
+</html>
