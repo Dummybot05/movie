@@ -25,7 +25,7 @@
             <% } %>
             Country: <%= infobox.country %><br />
             Language: <%= 'Telugu' %><br />
-            Runtime: <%= Math.floor(parseInt(infobox.runtime) / 60) + '+hrs' %>
+            Runtime: <%= Math.floor(parseInt(infobox.runtime) / 60) + ' : ' + Math.floor(parseInt(infobox.runtime) % 60) %>
           </div>
     </div>
     <iframe src="<%= actual[0] %>" allowfullscreen></iframe>
