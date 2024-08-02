@@ -1,9 +1,16 @@
 var links = [
+    'Animal_(2023_Indian_film)',
     'Godzilla_x_Kong:_The_New_Empire',
     'Kushi_(2023_film)',
     'Leo_(2023_Indian_film)'
 ];
+
 var actual = {
+    'Animal_(2023_Indian_film)': [
+      'https://1024terabox.com/sharing/embed?surl=VMtDimKfOFm50wR50-vBag&resolution=1080&autoplay=true&mute=false&uk=4398578630871&fid=879038689017190&slid=',
+      'https://youtu.be/YD7b4gU0HWQ',
+      'https://1024terabox.com/s/1vMndjMHdW8YgYLwJxh9eIA'
+    ],
     'Godzilla_x_Kong:_The_New_Empire' : [
       'https://1024terabox.com/sharing/embed?surl=_SIjnDU0Cvi9d5Kg_gpkZw&resolution=720&autoplay=true&mute=false&uk=4398578630871&fid=660742023789616&slid=',
       'https://www.youtube.com/watch?v=qqrpMRDuPfc',
