@@ -28,7 +28,9 @@
             Runtime: <%= Math.floor(parseInt(infobox.runtime) / 60) + ' : ' + Math.floor(parseInt(infobox.runtime) % 60) %>
           </div>
     </div>
-    <iframe src="<%= actual[0] %>" allowfullscreen></iframe>
+   <!--
+     <iframe src="<%=  %>" allowfullscreen></iframe>
+   -->
     <div id="btns">
       <div onclick="window.location.href = '<%= actual[1] %>'">Trailer</div>
       <div onclick="window.location.href = '<%= actual[2] %>'">Download</div>
