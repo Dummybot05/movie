@@ -144,7 +144,7 @@
                   <p class="card-text">Country: <strong>
                       <%= infobox.country %>
                     </strong></p>
-                  <p class="card-text">Language: <strong>Telugu</strong></p>
+                  <p class="card-text">Language: <strong><%= actual[3] %></strong></p>
                   <p class="card-text">
                     Runtime: <strong>
                       <%= Math.floor(parseInt(infobox.runtime) / 60) + ' : ' + Math.floor(parseInt(infobox.runtime) %
@@ -161,6 +161,11 @@
         <div class="d-grid gap-2 col-md-6 mx-auto">
           <button class="btn btn-danger" type="button" onclick="window.location.href = '<%= actual[0] %>'">Watch
             Trailer</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Language: <%= actual[3] %></p>
         </div>
       </div>
       <div class="row">
