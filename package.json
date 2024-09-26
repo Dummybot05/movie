@@ -6,10 +6,10 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [],
+  "keywords": ["movies", "free movie download", "watch online movies", "hindi movies", "telugu movies", "english movies"],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Top notch Movies - provides wide range movies from all over the world",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",

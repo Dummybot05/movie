@@ -98,7 +98,6 @@
   </header>
 
   <main>
-
     <section class="py-2 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
@@ -115,7 +114,7 @@
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <% data.forEach((items) => { %>
-            <div class="col" onclick="window.location.href = '<%= items[0][0] %>'">
+            <div class="col" onclick="window.location.href = '<%= items[0].title %>'">
               <div class="card shadow-sm">
                 <img src="<%= items[1].originalimage.source %>" style="max-height: min-content" class="card-img-top" alt="<%= items[1].originalimage.source %>" />
                 <div class="card-body">
@@ -130,7 +129,7 @@
                 </div>
               </div>
             </div>
-            <% }) %>
+          <% }) %>
         </div>
       </div>
     </div>
@@ -139,9 +138,10 @@
   <footer class="text-body-secondary py-5">
     <div class="container">
       <p class="float-end mb-1"><a href="#">Back to top</a></p>
-      <p class="mb-1">&copy; Top notch Movies</p>
+      <p class="mb-1">&copy;2024 Top notch Movies</p>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
