@@ -8,6 +8,14 @@ const dataArray = [
     ]
   },
   {
+    "title": "Maharaja_(2024_film)",
+    "links": [
+      "https://youtube.com/watch?v=Uh6sp7CHsx8",
+      "https://1024terabox.com/s/1wPIZYy6JAusYDHtCtDzxUw",
+      "https://1024terabox.com/sharing/embed?surl=Ay7kKzy5M1CUJa5prEP_DQ&resolution=360"
+    ]
+  },
+  {
     "title": "Godzilla_x_Kong:_The_New_Empire",
     "links": [
       "https://www.youtube.com/watch?v=qqrpMRDuPfc",
