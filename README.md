@@ -1,5 +1,4 @@
 
-```markdown
 # Movies Provider Website
 
 Welcome to the Movies Provider Website! This platform is your go-to resource for discovering, reviewing, and streaming a wide variety of movies from different genres and eras.
