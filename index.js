@@ -1,7 +1,6 @@
 const express = require('express');
 const PORT = process.env.PORT || 3000;
 const app = express();
-const ejs = require('ejs');
 const wiki = require('wikipedia');
 const data = require('./data.js');
 
