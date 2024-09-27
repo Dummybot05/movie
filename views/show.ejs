@@ -138,11 +138,7 @@
                     </strong></p>
                   <p class="card-text">
                     Release: <strong>
-<% try { %>
 <%= new Date(infobox.released.date || infobox.released[0].date).getFullYear(); %>
-<% } catch(e) { %>
-<%= Not Today %>
-<% } %>
                     </strong>
                   </p>
                   <p class="card-text">Country: <strong>
