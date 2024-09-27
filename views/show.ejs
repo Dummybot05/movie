@@ -139,8 +139,7 @@
                   <p class="card-text">
                     Release: <strong>
 <% try { %>
-<% var rel = new Date(infobox.released.date || infobox.released[0].date).getFullYear(); %>
-<%= rel %>
+<%= new Date(infobox.released.date || infobox.released[0].date).getFullYear(); %>
 <% } catch(e) { %>
 <%= Not Today %>
 <% } %>
